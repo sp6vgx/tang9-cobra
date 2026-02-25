@@ -13,16 +13,25 @@ FPGA Board: Sipeed Tang Nano 9K (GW1NR-9 FPGA chip)
 
 Link to the Cobra 1 topic on the "Elektroda" forum: https://www.elektroda.pl/rtvforum/topic2564143.html
 
+
+![image](https://raw.githubusercontent.com/sp6vgx/tang9-cobra/master/docs/cobra1_pic1.jpg)
+
+![image](https://raw.githubusercontent.com/sp6vgx/tang9-cobra/master/docs/cobra1_pic2.jpg)
+
+![image](https://raw.githubusercontent.com/sp6vgx/tang9-cobra/master/docs/cobra1_pic3.jpg)
+
 ## Implemented hardware
+
 - Cobra 1, Cobra Kolor, Cobra Dual RAM (48kB)
 - HDMI output at 1280x720 (60Hz)
 - HDMI output sound (PCM 48kHz)
 - USB Keyboard
 - Z80 Soft CPU (T80a)
 - Tape storage In/Out
-- Sound: Beep, "Katarynka", AY3-8910
+- Sound: Beep, Katarynka, AY3-8910
 
 ## How-to make it running
+
 1. Install openFpgaLoader tool
 2. Upload ROM image ROM/cobra_rom.bin into the external SPI flash by ```openFPGALoader -b tangnano9k --external-flash ROM/cobra_rom.bin```
 3. Upload bitstream into the internal flash ```openFPGALoader -b tangnano9k -f impl/pnr/tang9k-cobra.fs```
